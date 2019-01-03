@@ -3,18 +3,21 @@
 * {
     padding: 0;
     margin: 0;
+    
   }
 
 body{
     background: $primary;
+     overflow-x:hidden;
 }
 
 .navbar{
     background: $secondary;
-    height: 30px;
-    padding: 30px;
+    padding: 10px;
     &_logo{
         height: 55px;
+        max-height: 60px;
+        padding: 0 10%;
     }
     &_burger{
         cursor: pointer;
@@ -24,13 +27,17 @@ body{
 
 .section-banner{
     background:$secondary;
+    margin-top: 2px;
     &__info{
         min-height: 50vh;
+        &-container{
+            padding: 50px 40px;
+        }
         &-title{
            font-family: $text;
            color: $primary;
            font-size: 2rem;
-           left: 250px;
+           left: 170px;
            position: absolute; 
            font-weight: bold; 
         }
@@ -56,28 +63,30 @@ body{
             border-radius: 25px;
             padding: 16px 50px;
             font-weight: bold;
+            border-style: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 
     &__img{
         background-image: url("/img/banner.jpeg");
         background-size: cover;
-        height: 100vh;
+        height: 80vh;
     }
     
 }
 
 .section-work{
-    padding: 40px;
- 
 
     &__info{
-       
+        margin-top: 80px;
         &-title{
             font-family: $text;
             color: $white;
             font-size: 2.8em;
-
+         
         }
     
         &-text{
@@ -90,7 +99,8 @@ body{
     }
 
     &__wrap{
-        margin-top: 20px;
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
         
 }
@@ -98,12 +108,14 @@ body{
 .section-banner-2{
     background:$light;
     &__info{
-        min-height: 50vh;
-        padding: 30px;
+        min-height: 60vh;
+         &-container{
+            padding: 0px 18%;
+        }
         &-title{
            font-family: $text;
            color: $primary;
-           font-size: 1.5rem;
+           font-size: 1.2rem;
            font-weight: bold; 
            text-align: center;
         }
@@ -111,8 +123,7 @@ body{
         &-subtitle{
             font-family: $title;
             color: $tomato;
-            font-size: 3.5em;
-        
+            font-size: 2.6em;
         }
 
         &-text{
@@ -123,18 +134,22 @@ body{
         &-button{
             background: $tomato;
             color: white;
-            border-radius: 20px;
-            padding: 12px 30px;
+            border-radius: 25px;
+            padding: 18px 38px;
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 10px;
+            border-style: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 
     &__img{
         background-image: url("/img/banner-2.jpeg");
         background-size: cover;
-        height: 100vh;
+        height: 80vh;
     }
     
 }
@@ -142,12 +157,14 @@ body{
 .section-banner-3{
     background:$white;
     &__info{
-        min-height: 50vh;
-        padding: 30px;
+        min-height: 60vh;
+         &-container{
+            padding: 0px 18%;
+        }
         &-title{
            font-family: $text;
            color: $primary;
-           font-size: 1.5rem;
+           font-size: 1.2rem;
            font-weight: bold; 
            text-align: center;
         }
@@ -155,7 +172,7 @@ body{
         &-subtitle{
             font-family: $title;
             color: $tomato;
-            font-size: 3.5em;
+            font-size: 2.6em;
             text-align: center;
         
         }
@@ -168,18 +185,22 @@ body{
         &-button{
             background: $tomato;
             color: white;
-            border-radius: 20px;
-            padding: 12px 30px;
+            border-radius: 25px;
+            padding: 18px 38px;
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 10px;
+            border-style: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 
     &__img{
         background-image: url("/img/banner-3.jpeg");
         background-size: cover;
-        height: 100vh;
+        height: 80vh;
     }
     
 }
@@ -188,12 +209,14 @@ body{
 .section-banner-4{
     background:$white;
     &__info{
-        min-height: 50vh;
-        padding: 30px;
+        min-height: 60vh;
+         &-container{
+            padding: 0px 12%;
+        }
         &-title{
            font-family: $text;
            color: $primary;
-           font-size: 1.5rem;
+           font-size: 1.2rem;
            font-weight: bold; 
            text-align: center;
         }
@@ -201,7 +224,7 @@ body{
         &-subtitle{
             font-family: $title;
             color: $tomato;
-            font-size: 3.5em;
+            font-size: 2.6em;
             text-align: center;
         
         }
@@ -214,40 +237,45 @@ body{
         &-button{
             background: $tomato;
             color: white;
-            border-radius: 20px;
-            padding: 12px 30px;
+            border-radius: 25px;
+            padding: 18px 38px;
             font-weight: bold;
             margin-top: 20px;
             margin-bottom: 10px;
+            border-style: none;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
 
     &__img{
         background-image: url("/img/banner-4.jpeg");
         background-size: cover;
-        height: 100vh;
+        height: 90vh;
     }
     
 }
 
 .section-about{
     min-height: 100vh;
-    background-image: linear-gradient(to, $primary 55% ,$secondary 45%);
+    background-image: linear-gradient(to, $primary 57% ,$light 43%);
     &__info{
        
         &-title{
             font-family: $text;
             color: $white;
-            font-size: 2.8em;
-
+            font-size: 3em;
+            margin-top: 60px;
         }
-    
+
         &-text{
             font-family: $text;
             font-style: italic;
             color: $white;
             font-size: .9rem;
-            margin: 30px;
+            margin-top: 20px;
+            margin-bottom: 80px;
         }
     }
 
@@ -287,7 +315,7 @@ body{
 
 
 .content_maps{
-
+background: $white;
     &-img{
         background-image: url("/img/banner-5.jpeg");
         background-size: cover;
@@ -311,21 +339,20 @@ body{
 }
 
 .item {
- 
 	&--text, &--img {
-        width: 300px;
-		height: 290px;
+        width: 350px;
+		height: 310px;
         margin: 15px;
     }
 
     &--text{
         background-color: #fff;
-        img{
-            margin-top: 20px;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;      
     }
 
-	
 	&__title {
         font-size: 1.3em;
 	}
@@ -334,7 +361,12 @@ body{
         margin-top: 15px;
         padding: 0 25px;;
 		font-style: italic;
-	}
+    }
+    
+    &__title-banner-2{
+        color: $primary;
+        font-weight: bold;
+    }
 		
 	&--img {
 		background-position: center center;
@@ -354,6 +386,9 @@ body{
     }
 
     &--card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px 0;
         width: 250px;
 		height: 100px;
@@ -383,15 +418,50 @@ body{
 	}
     
 }
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 584px){
     .item{
         &--card,&--img2{
-            margin: 0 25px;
+            margin: 0 15px;
+            height: 200px;
+          
         }
 
         &--card{
-            width: 300px;
-            height: 200px;
+            height: 130px;
         }
     }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .item{
+        &--card,&--img2{
+            margin: 0 23px;
+            height: 200px;
+        }
+
+        &--img2{
+            margin-bottom: 100px;
+        }
+
+        &--card,{
+          height: 130px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+    }
+
+    .section-banner{
+        &-2,&-3,&-4{ 
+            &__info{
+                &-subtitle{
+                    font-size: 3.5em;
+                }
+            }      
+           
+        }
+    }
+
 }
